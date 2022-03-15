@@ -11,12 +11,12 @@ variable "INST_TYPE" {
 }
 
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "eu-central-1"
 }
 
 variable "OWNER" {
   type    = string
-  default = "PlatonovAA"
+  default = "aleksandr_platonov@epam.com"
 }
 
 variable "PRIVATE_KEY_PATH" {
