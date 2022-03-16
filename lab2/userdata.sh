@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo yum update -y
 sudo amazon-linux-extras install nginx1 -y 
-sudo echo "$HOSTANME" > /var/www/html/index.html
+sudo su -c "/bin/echo Hello from $HOSTNAME > /usr/share/nginx/html/index.html"
 sudo systemctl enable --now nginx
-
+  
